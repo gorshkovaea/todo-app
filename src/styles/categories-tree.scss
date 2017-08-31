@@ -1,0 +1,78 @@
+// Extra styles
+
+.selected-category {
+    background-color: $selected-category-color;
+}
+
+.item1 {
+    margin-left: $margin-x-small-horizontal;
+}
+.item2 {
+    margin-left: $margin-x-small-horizontal + 1;
+}
+.item3 {
+    margin-left: $margin-x-small-horizontal + 2;
+}
+.item4 {
+    margin-left: $margin-x-small-horizontal + 3;
+}
+
+// Empty Categories Tree 
+
+.list-empty-categories {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    
+    @media (min-width: 767px)  {
+        border: none;
+    }
+    @media (max-width: 767px)  {
+        display: block;
+        max-width: $max-width-for-small-screen;
+        margin: $margin-x-small-vertical auto;
+    }
+    .caption-empty-categories {
+        color: $caption-of-empty-blocks-color;  
+    }
+}
+
+// Category
+
+.category-list-group-item {
+    display: flex;
+    align-items: center;
+
+    .category-arrow-icon {
+        display: inline-flex;
+        margin-right: $margin-x-small-horizontal;
+    }
+
+    .category-title-with-icon {
+        flex: 1 0;
+        overflow: hidden;
+    
+        .category-title {
+            margin-right: $margin-x-small-horizontal;
+            word-wrap: break-word;
+        }
+    }
+    
+    .category-trash-plus-icons {
+        .glyphicon-trash, .glyphicon-plus {
+            margin-left: $margin-x-small-horizontal;
+        }
+    }
+}
+
+// Category Popup
+
+.category-changes-input {
+    max-width: $max-width-input-todo-modal;
+    margin: $margin-x-small-vertical auto;
+}

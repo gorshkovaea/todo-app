@@ -1,0 +1,116 @@
+// Extra styles
+
+.todo-done {
+    background-color: $selected-category-color;
+
+    .todo-title {
+        text-decoration: line-through;
+    }
+}
+
+// Show Done block
+
+.show-done {
+    white-space: nowrap;
+    text-align: center;
+    height: $input-height;
+    padding-top: $margin-base-vertical;
+
+    @media (max-width: 767px)  {
+        padding-top: $margin-small-vertical;   
+    }
+}
+
+// Empty Tasks List
+
+.list-empty-todos {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    
+    @media (min-width: 767px)  {
+        border: none;
+    }
+    @media (max-width: 767px)  {
+        display: block;
+        max-width: $max-width-for-small-screen;
+        margin: $margin-x-small-vertical auto;
+    }
+    .caption-empty-todos {
+        color: $caption-of-empty-blocks-color;
+    }
+}
+
+
+// Todo item
+
+.todo-list-group-item {
+    display: flex;
+    align-items: center;
+
+    .content-of-todo-item {
+        display: inline-flex;
+        margin-right: $margin-x-small-horizontal;
+
+        .form-check-input {
+            cursor: pointer;
+        }
+    }
+    
+    .form-check-label {
+        margin-right: $margin-x-small-horizontal;
+        flex: 1 0;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+}
+
+// Todo Popup
+
+ .todo-changes-input {
+    max-width: $max-width-input-todo-modal;
+    margin: $margin-x-small-vertical auto;
+ }
+
+ .todo-changes-checkbox {
+     max-width: $max-width-input-todo-modal;
+     margin: $margin-x-small-vertical auto;
+ }
+
+ .todo-changes-dropdown {
+    margin: $margin-x-small-vertical auto;
+    max-width: $max-width-input-todo-modal;
+    cursor: pointer;
+    
+    .select-todo-category {
+        max-width: $max-width-input-todo-modal;
+        // overflow-y: auto;
+        overflow-x: hidden;
+        font-size: 15px;
+        text-align: left;
+        background-color: $selected-category-dropdown-color;
+        border: 1px solid $dropdown-border-color;
+        border-radius: 4px;
+        background-clip: padding-box;
+    }
+
+    .dropdown-menu {
+        max-height: $list-group-small-height !important;
+        overflow-y: auto;
+    }
+    
+    .select-todo-category:hover {
+        color:inherit;
+    }
+
+    .dropdown-item {
+        max-width: $max-width-input-todo-modal;
+        overflow: hidden;
+        padding: 0;
+    }
+ }

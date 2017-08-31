@@ -1,0 +1,73 @@
+@import 'variables.scss';
+@import 'tasks-list.scss';
+@import 'categories-tree.scss';
+
+/* Shared styles: */
+
+// Icons
+
+.glyphicon {
+    font-size: 14px;
+    color: $icons-color;
+}
+
+// Inputs
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.input-group {
+    margin: $margin-x-small-vertical auto;
+
+    .form-control, .btn {
+        height: $input-height;
+    }
+
+    @media (max-width: 767px)  {
+        max-width: $max-width-for-small-screen;
+    }
+}
+
+.list {
+    margin: $margin-x-small-vertical 0;
+    border: 1px solid $border-color-categories-tree;
+    height: $list-group-height;
+    border-radius: 4px;
+
+    @media (max-width: 767px)  {
+        height: auto;
+        max-height: $list-group-small-height;
+        border: none;
+    }
+
+    .list-group {
+        margin: 0 auto;
+        height: $list-group-height;
+        overflow-y: auto;
+
+        .list-group-item {
+            cursor: pointer;
+        }
+        .list-group-item:last-child {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+         @media (max-width: 767px)  {
+            height: auto;
+            max-height: inherit;
+            max-width: $max-width-for-small-screen;
+        }
+    }
+}
+
+// Modal
+
+.modal-dialog {
+    max-width: $max-width-modal;
+    @media (max-width: 767px)  {
+        max-width: $max-width-for-small-screen;
+        margin: $margin-x-small-vertical auto;
+    }
+}
