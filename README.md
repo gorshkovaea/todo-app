@@ -11,3 +11,4 @@ To run the application, you must:
 3. Go to this folder.
 4. Run command 'npm i' to install dependencies.
 5. Run command 'npm start' to start application.
+6. Open url 'localhost:3000' in your browser.
