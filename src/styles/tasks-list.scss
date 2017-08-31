@@ -74,7 +74,7 @@
 
  .todo-changes-input {
     max-width: $max-width-input-todo-modal;
-    margin: $margin-x-small-vertical auto;
+    margin: $margin-base-vertical auto;
  }
 
  .todo-changes-checkbox {
@@ -83,13 +83,12 @@
  }
 
  .todo-changes-dropdown {
-    margin: $margin-x-small-vertical auto;
+    margin: $margin-base-vertical auto;
     max-width: $max-width-input-todo-modal;
     cursor: pointer;
     
     .select-todo-category {
         max-width: $max-width-input-todo-modal;
-        // overflow-y: auto;
         overflow-x: hidden;
         font-size: 15px;
         text-align: left;
